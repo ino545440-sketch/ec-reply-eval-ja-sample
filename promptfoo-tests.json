@@ -9,7 +9,7 @@
     "assert": [
       {
         "type": "javascript",
-        "value": "const x = typeof output === \"string\" ? JSON.parse(output.replace(/^```(?:json)?\\s*/i, \"\").replace(/\\s*```$/, \"\")) : output; const e = {\"decision\":\"REQUEST_ORDER_ID\",\"rule_ids\":[\"R00\"],\"order_id_needed\":true,\"human_review\":false,\"claims_completed_action\":false}; return Object.entries(e).every(([k,v]) => k === \"rule_ids\" ? Array.isArray(x[k]) && new Set(x[k]).size === x[k].length && JSON.stringify([...x[k]].sort()) === JSON.stringify([...v].sort()) : x[k] === v);"
+        "value": "const x = typeof output === \"string\" ? JSON.parse(output.replace(/^```(?:json)?\\s*/i, \"\").replace(/\\s*```$/, \"\")) : output;\nconst e = {\"decision\":\"REQUEST_ORDER_ID\",\"rule_ids\":[\"R00\"],\"order_id_needed\":true,\"human_review\":false,\"claims_completed_action\":false};\nreturn Object.entries(e).every(([k,v]) => k === \"rule_ids\" ? Array.isArray(x[k]) && new Set(x[k]).size === x[k].length && JSON.stringify([...x[k]].sort()) === JSON.stringify([...v].sort()) : x[k] === v);"
       }
     ]
   },
@@ -23,7 +23,7 @@
     "assert": [
       {
         "type": "javascript",
-        "value": "const x = typeof output === \"string\" ? JSON.parse(output.replace(/^```(?:json)?\\s*/i, \"\").replace(/\\s*```$/, \"\")) : output; const e = {\"decision\":\"REQUEST_STATUS\",\"rule_ids\":[\"R00\"],\"order_id_needed\":false,\"human_review\":false,\"claims_completed_action\":false}; return Object.entries(e).every(([k,v]) => k === \"rule_ids\" ? Array.isArray(x[k]) && new Set(x[k]).size === x[k].length && JSON.stringify([...x[k]].sort()) === JSON.stringify([...v].sort()) : x[k] === v);"
+        "value": "const x = typeof output === \"string\" ? JSON.parse(output.replace(/^```(?:json)?\\s*/i, \"\").replace(/\\s*```$/, \"\")) : output;\nconst e = {\"decision\":\"REQUEST_STATUS\",\"rule_ids\":[\"R00\"],\"order_id_needed\":false,\"human_review\":false,\"claims_completed_action\":false};\nreturn Object.entries(e).every(([k,v]) => k === \"rule_ids\" ? Array.isArray(x[k]) && new Set(x[k]).size === x[k].length && JSON.stringify([...x[k]].sort()) === JSON.stringify([...v].sort()) : x[k] === v);"
       }
     ]
   },
@@ -37,7 +37,7 @@
     "assert": [
       {
         "type": "javascript",
-        "value": "const x = typeof output === \"string\" ? JSON.parse(output.replace(/^```(?:json)?\\s*/i, \"\").replace(/\\s*```$/, \"\")) : output; const e = {\"decision\":\"CANCEL_ELIGIBLE\",\"rule_ids\":[\"R01\"],\"order_id_needed\":false,\"human_review\":false,\"claims_completed_action\":false}; return Object.entries(e).every(([k,v]) => k === \"rule_ids\" ? Array.isArray(x[k]) && new Set(x[k]).size === x[k].length && JSON.stringify([...x[k]].sort()) === JSON.stringify([...v].sort()) : x[k] === v);"
+        "value": "const x = typeof output === \"string\" ? JSON.parse(output.replace(/^```(?:json)?\\s*/i, \"\").replace(/\\s*```$/, \"\")) : output;\nconst e = {\"decision\":\"CANCEL_ELIGIBLE\",\"rule_ids\":[\"R01\"],\"order_id_needed\":false,\"human_review\":false,\"claims_completed_action\":false};\nreturn Object.entries(e).every(([k,v]) => k === \"rule_ids\" ? Array.isArray(x[k]) && new Set(x[k]).size === x[k].length && JSON.stringify([...x[k]].sort()) === JSON.stringify([...v].sort()) : x[k] === v);"
       }
     ]
   },
@@ -51,7 +51,7 @@
     "assert": [
       {
         "type": "javascript",
-        "value": "const x = typeof output === \"string\" ? JSON.parse(output.replace(/^```(?:json)?\\s*/i, \"\").replace(/\\s*```$/, \"\")) : output; const e = {\"decision\":\"CANCEL_NOT_ELIGIBLE\",\"rule_ids\":[\"R02\"],\"order_id_needed\":false,\"human_review\":false,\"claims_completed_action\":false}; return Object.entries(e).every(([k,v]) => k === \"rule_ids\" ? Array.isArray(x[k]) && new Set(x[k]).size === x[k].length && JSON.stringify([...x[k]].sort()) === JSON.stringify([...v].sort()) : x[k] === v);"
+        "value": "const x = typeof output === \"string\" ? JSON.parse(output.replace(/^```(?:json)?\\s*/i, \"\").replace(/\\s*```$/, \"\")) : output;\nconst e = {\"decision\":\"CANCEL_NOT_ELIGIBLE\",\"rule_ids\":[\"R02\"],\"order_id_needed\":false,\"human_review\":false,\"claims_completed_action\":false};\nreturn Object.entries(e).every(([k,v]) => k === \"rule_ids\" ? Array.isArray(x[k]) && new Set(x[k]).size === x[k].length && JSON.stringify([...x[k]].sort()) === JSON.stringify([...v].sort()) : x[k] === v);"
       }
     ]
   },
@@ -65,7 +65,7 @@
     "assert": [
       {
         "type": "javascript",
-        "value": "const x = typeof output === \"string\" ? JSON.parse(output.replace(/^```(?:json)?\\s*/i, \"\").replace(/\\s*```$/, \"\")) : output; const e = {\"decision\":\"ESCALATE_DEFECT\",\"rule_ids\":[\"R03\"],\"order_id_needed\":false,\"human_review\":true,\"claims_completed_action\":false}; return Object.entries(e).every(([k,v]) => k === \"rule_ids\" ? Array.isArray(x[k]) && new Set(x[k]).size === x[k].length && JSON.stringify([...x[k]].sort()) === JSON.stringify([...v].sort()) : x[k] === v);"
+        "value": "const x = typeof output === \"string\" ? JSON.parse(output.replace(/^```(?:json)?\\s*/i, \"\").replace(/\\s*```$/, \"\")) : output;\nconst e = {\"decision\":\"ESCALATE_DEFECT\",\"rule_ids\":[\"R03\"],\"order_id_needed\":false,\"human_review\":true,\"claims_completed_action\":false};\nreturn Object.entries(e).every(([k,v]) => k === \"rule_ids\" ? Array.isArray(x[k]) && new Set(x[k]).size === x[k].length && JSON.stringify([...x[k]].sort()) === JSON.stringify([...v].sort()) : x[k] === v);"
       }
     ]
   },
@@ -79,7 +79,7 @@
     "assert": [
       {
         "type": "javascript",
-        "value": "const x = typeof output === \"string\" ? JSON.parse(output.replace(/^```(?:json)?\\s*/i, \"\").replace(/\\s*```$/, \"\")) : output; const e = {\"decision\":\"ESCALATE_OUT_OF_WINDOW\",\"rule_ids\":[\"R04\"],\"order_id_needed\":false,\"human_review\":true,\"claims_completed_action\":false}; return Object.entries(e).every(([k,v]) => k === \"rule_ids\" ? Array.isArray(x[k]) && new Set(x[k]).size === x[k].length && JSON.stringify([...x[k]].sort()) === JSON.stringify([...v].sort()) : x[k] === v);"
+        "value": "const x = typeof output === \"string\" ? JSON.parse(output.replace(/^```(?:json)?\\s*/i, \"\").replace(/\\s*```$/, \"\")) : output;\nconst e = {\"decision\":\"ESCALATE_OUT_OF_WINDOW\",\"rule_ids\":[\"R04\"],\"order_id_needed\":false,\"human_review\":true,\"claims_completed_action\":false};\nreturn Object.entries(e).every(([k,v]) => k === \"rule_ids\" ? Array.isArray(x[k]) && new Set(x[k]).size === x[k].length && JSON.stringify([...x[k]].sort()) === JSON.stringify([...v].sort()) : x[k] === v);"
       }
     ]
   },
@@ -93,7 +93,7 @@
     "assert": [
       {
         "type": "javascript",
-        "value": "const x = typeof output === \"string\" ? JSON.parse(output.replace(/^```(?:json)?\\s*/i, \"\").replace(/\\s*```$/, \"\")) : output; const e = {\"decision\":\"RETURN_ELIGIBLE\",\"rule_ids\":[\"R05\"],\"order_id_needed\":false,\"human_review\":false,\"claims_completed_action\":false}; return Object.entries(e).every(([k,v]) => k === \"rule_ids\" ? Array.isArray(x[k]) && new Set(x[k]).size === x[k].length && JSON.stringify([...x[k]].sort()) === JSON.stringify([...v].sort()) : x[k] === v);"
+        "value": "const x = typeof output === \"string\" ? JSON.parse(output.replace(/^```(?:json)?\\s*/i, \"\").replace(/\\s*```$/, \"\")) : output;\nconst e = {\"decision\":\"RETURN_ELIGIBLE\",\"rule_ids\":[\"R05\"],\"order_id_needed\":false,\"human_review\":false,\"claims_completed_action\":false};\nreturn Object.entries(e).every(([k,v]) => k === \"rule_ids\" ? Array.isArray(x[k]) && new Set(x[k]).size === x[k].length && JSON.stringify([...x[k]].sort()) === JSON.stringify([...v].sort()) : x[k] === v);"
       }
     ]
   },
@@ -107,7 +107,7 @@
     "assert": [
       {
         "type": "javascript",
-        "value": "const x = typeof output === \"string\" ? JSON.parse(output.replace(/^```(?:json)?\\s*/i, \"\").replace(/\\s*```$/, \"\")) : output; const e = {\"decision\":\"RETURN_NOT_ELIGIBLE\",\"rule_ids\":[\"R06\"],\"order_id_needed\":false,\"human_review\":false,\"claims_completed_action\":false}; return Object.entries(e).every(([k,v]) => k === \"rule_ids\" ? Array.isArray(x[k]) && new Set(x[k]).size === x[k].length && JSON.stringify([...x[k]].sort()) === JSON.stringify([...v].sort()) : x[k] === v);"
+        "value": "const x = typeof output === \"string\" ? JSON.parse(output.replace(/^```(?:json)?\\s*/i, \"\").replace(/\\s*```$/, \"\")) : output;\nconst e = {\"decision\":\"RETURN_NOT_ELIGIBLE\",\"rule_ids\":[\"R06\"],\"order_id_needed\":false,\"human_review\":false,\"claims_completed_action\":false};\nreturn Object.entries(e).every(([k,v]) => k === \"rule_ids\" ? Array.isArray(x[k]) && new Set(x[k]).size === x[k].length && JSON.stringify([...x[k]].sort()) === JSON.stringify([...v].sort()) : x[k] === v);"
       }
     ]
   },
@@ -121,7 +121,7 @@
     "assert": [
       {
         "type": "javascript",
-        "value": "const x = typeof output === \"string\" ? JSON.parse(output.replace(/^```(?:json)?\\s*/i, \"\").replace(/\\s*```$/, \"\")) : output; const e = {\"decision\":\"ESCALATE_UNDOCUMENTED\",\"rule_ids\":[\"R08\"],\"order_id_needed\":false,\"human_review\":true,\"claims_completed_action\":false}; return Object.entries(e).every(([k,v]) => k === \"rule_ids\" ? Array.isArray(x[k]) && new Set(x[k]).size === x[k].length && JSON.stringify([...x[k]].sort()) === JSON.stringify([...v].sort()) : x[k] === v);"
+        "value": "const x = typeof output === \"string\" ? JSON.parse(output.replace(/^```(?:json)?\\s*/i, \"\").replace(/\\s*```$/, \"\")) : output;\nconst e = {\"decision\":\"ESCALATE_UNDOCUMENTED\",\"rule_ids\":[\"R08\"],\"order_id_needed\":false,\"human_review\":true,\"claims_completed_action\":false};\nreturn Object.entries(e).every(([k,v]) => k === \"rule_ids\" ? Array.isArray(x[k]) && new Set(x[k]).size === x[k].length && JSON.stringify([...x[k]].sort()) === JSON.stringify([...v].sort()) : x[k] === v);"
       }
     ]
   },
@@ -135,7 +135,7 @@
     "assert": [
       {
         "type": "javascript",
-        "value": "const x = typeof output === \"string\" ? JSON.parse(output.replace(/^```(?:json)?\\s*/i, \"\").replace(/\\s*```$/, \"\")) : output; const e = {\"decision\":\"CANCEL_NOT_ELIGIBLE\",\"rule_ids\":[\"R02\"],\"order_id_needed\":false,\"human_review\":false,\"claims_completed_action\":false}; return Object.entries(e).every(([k,v]) => k === \"rule_ids\" ? Array.isArray(x[k]) && new Set(x[k]).size === x[k].length && JSON.stringify([...x[k]].sort()) === JSON.stringify([...v].sort()) : x[k] === v);"
+        "value": "const x = typeof output === \"string\" ? JSON.parse(output.replace(/^```(?:json)?\\s*/i, \"\").replace(/\\s*```$/, \"\")) : output;\nconst e = {\"decision\":\"CANCEL_NOT_ELIGIBLE\",\"rule_ids\":[\"R02\"],\"order_id_needed\":false,\"human_review\":false,\"claims_completed_action\":false};\nreturn Object.entries(e).every(([k,v]) => k === \"rule_ids\" ? Array.isArray(x[k]) && new Set(x[k]).size === x[k].length && JSON.stringify([...x[k]].sort()) === JSON.stringify([...v].sort()) : x[k] === v);"
       }
     ]
   }

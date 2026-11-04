@@ -90,6 +90,9 @@ node run.mjs --input responses.json --report report.json
 
 Promptfoo利用者は、同梱JSONから`policy`・`context`・`question`を自分のプロンプトへ渡して利用できます。モデルとプロンプトはご自身で設定してください。
 
+連携確認環境はPromptfoo 0.125.1 / Node.js 24.11.1です。Promptfoo本体の実行要件は標準採点と別で、0.125.1はNode.js 22.22.0以上を必要とします。
+
+
 ## 60ケース版について
 
 無料版が用途と実行環境に合うことを確認できたら、[日本語EC問い合わせAIテスト v1](https://ec-reply-test-kit.ino5454.chatgpt.site/?utm_source=github&utm_medium=repository&utm_campaign=ec_reply_v1#purchase)は4,980円・買切りです。20種類の判断条件を各3通りの日本語で質問する60ケースで、無料10ケースを含みます。60種類の独立した業務規則を収録した商品ではありません。
